@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,300,500" rel="stylesheet">
+    <link rel="icon" type="image/png" href="media/icon.png">
+    <script src="js/functions.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <title>Lauren Johnston | Portfolio</title>
+  </head>
+  <body onscroll="arrow( 0 );" onload="init();">
+  	<img id="background" src="media/stones.jpg" />
+  	<img id="menu" src="media/menu.png" style="left: 0mm;"/>
+  	<nav>
+  		<a href="javascript: scrollInto( 'bio' );">Bio</a>
+  		<a href="javascript: scrollInto( 'projects' );">Projects</a>
+  		<a href="javascript: scrollInto( 'work' );">Work</a>
+  		<a href="javascript: scrollInto( 'volunteer' );">Volunteer</a>
+  		<a href="javascript: scrollInto( 'contact' );">Contact</a>
+  	</nav>
+  	<section id="landing">
+		<h1>
+			<a class="noULine" href="javascript: scrollInto( 'bio' );">
+				Lauren Johnston
+			</a>
+		</h1>
+		<h2 id="sub" >
+			<a class="noULine" href="javascript: scrollInto( 'bio' );">
+				Web and Mobile Computing B.S. and Human Centered Computing B.S.
+			</a>
+		</h2>
+  	</section>
+  	<img id="arrow" type="image" src="media/arrow.png"/>
+  	<main>
+  		<!-- Bio -->
+  		<div id="pad">
+  			<h2 id="bio">Bio</h2>
+  			<img id="me" src="media/me.jpg" width="300" height="420"/>
+  			<p><b>Lauren Johnston</b></p>
+  			<p>
+  				Highly motivated individual with concentration in web and mobile development 
+  				and back-end development. Skills in PHP, Javascript, HTML, Java, C++, and 
+  				UNIX.
+  			</p>
+  			<p>Web and Mobile B.S. and Human Centered Computing B.S.</p>
+  			<p>Rochester Institute of Technology</p>
+  			<p><a href="media/Lauren_Johnston_RIT_resume.pdf">R&eacute;sum&eacute;</a></p>
+  		</div>
+  	
+  		<!-- Contact -->
+  		<div class="center">
+  			<h2 id="contact">Contact Me</h2>
+  			<p><b>Lauren Johnston</b></p>
+  			<p>lxj7261@rit.edu</p>
+  			<p>(717) 222-2859</p>
+  			<p><a href="http://linkedin.com/in/lauren-johnston">linkedin.com/in/lauren-johnston</a>
+  		</div>	
+  	</main>
+  	<footer>
+  		<p>&copy;Lauren Johnston 2016</p>
+  		<p><a href="sources.html">Image sources</a></p>
+  	</footer>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+/* structural */
+html
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Work Sans', sans-serif;
+	background-color: white;
+	overflow-x: hidden;
+}
+
+body
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(10, 10, 10, .7);
+	font-weight: 100;
+}
+
+/* nav */
+nav
+{
+	position: absolute;
+	padding: 40px 0 0;
+	right: 50px;
+	z-index: 20;
+}
+
+nav a, nav a:hover, nav a:visited
+{
+	color: white;
+	padding: 15px;
+	font-size: 17pt;
+	text-decoration: none;
+	position: relative;
+}
+
+nav a:after
+{
+	content: "";
+	position: absolute;
+	background-color: transparent;
+	right: 0;
+	transition: width .5s ease, background-color .5s ease;
+	display: block;
+	height: 1px;
+	width: 0;
+}
+
+nav a:hover:after
+{
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: #42e8f4;
+	transition: all .5s ease;
+	display: block;
+	right: 0;
+}
+
+/* content */
+main
+{
+	background-color: white;
+	position: relative;
+	z-index: 10;
+	padding: 50px 50px 100px;
+}
+
+main > div
+{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+section
+{
+		height: 100%;
+		width: 100%;
+		position: relative;
+}
+
+/* text */
+h1
+{
+	color: white;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 300px;
+	margin: 0;
+	font-size: 50pt;
+	font-weight: 100;
+}
+
+h2
+{
+	font-size: 25pt;
+	font-weight: 100;
+	color: #444444;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 70px;
+}
+
+p
+{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	font-size: 13pt;
+}
+
+b
+{
+	font-weight: 500;
+	color: #0bb5c1;/*#444444;*/
+}
+
+footer
+{
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+	background-color: #222;
+	color: white;
+}
+
+/* classes */
+.center
+{
+	text-align: center;
+	border-bottom: none;
+}
+
+.fixed
+{
+	position: fixed;
+	padding: 10px 0;
+	right: 0;
+	background-color: #222;
+	width: 100%;
+	text-align: right;
+	padding-right: 50px;
+	margin: 0;
+}
+
+.noULine, .noULine:hover, .noULine:active
+{
+	color: white;
+	text-decoration: none;
+}
+
+/* card related */
+.container
+{
+	width: 100%;
+	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card
+{
+	margin: 10px 10px;
+}
+
+.card:hover
+{
+	cursor: pointer;
+}
+
+.card, 
+.front img
+{
+	width: 300px !important;
+	height: 400px !important;
+	text-align: left;
+	opacity: .9;
+	position: absolute;
+}
+
+.front img
+{
+	z-index: -1;
+}
+
+.front,
+.front h2,
+.front p
+{
+	background-color: var(--filter);
+	opacity: 1;
+	color: white;
+}
+
+.front p
+{
+	text-align: center;
+	position: absolute;
+	bottom: -17px;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.front h2
+{
+	padding: 10px;
+}
+
+.back
+{
+	width: 280px !important;
+	height: 380px !important;
+	text-align: left;
+	background-color: rgba(10, 10, 10, .1);
+	padding: 10px;
+}
+
+.card p
+{
+	font-size: 12pt;
+}
+
+/* ids */
+#arrow
+{
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 70px;
+	height: 70px;
+	z-index: 20;
+}
+
+#arrow img
+{
+	width: 70px;
+	height: 70px;
+}
+
+#background
+{
+	z-index: -5;
+	width: 2000px;
+	position: absolute;
+}
+
+#menu
+{
+	display: none;
+}
+
+#pad
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sub a
+{
+	color: #a0f3f9;
+	font-style: italic;
+	font-size: 20pt;
+	position: relative;
+	top: 300px;
+}
+
+#sub
+{
+	width: 400px;
+	margin: 0 auto;
+}
+
+/* links */
+a
+{
+	color: #0bb5c1;
+}
+
+a:hover
+{
+	color: #5cacf4;
+}
+
+a:active
+{
+	color: #42e8f4;
+}
+
+/* media queries */
+
+/* large screens */
+@media screen and ( min-device-width: 1900px )
+{
+	nav
+	{
+		font-weight: 300;
+	}
+	
+	h2
+	{
+		font-weight: 300;
+	}
+}
+
+/* mobile */
+@media screen and ( max-device-width: 450px )
+{
+	#landing
+	{
+		height: 250mm;
+	}
+	
+	div
+	{
+		margin: 0 0 120px 0;
+		border-bottom: 1px solid #222;
+		padding-bottom: 50px;
+	}
+	
+	/* text */
+	h1
+	{
+		font-size: 75pt;
+	}
+	
+	h2
+	{
+		font-weight: 300;
+		font-size: 50pt;
+	}
+	
+	p
+	{
+		font-size: 30pt;
+	}
+	
+	/* ids */
+	#arrow
+	{
+		width: 200px;
+		height: 200px;
+	}
+	
+	#background
+	{
+		width: 100%;
+		height: 250mm;
+	}
+	
+	#sub
+	{
+		width: 70%;
+	}
+	
+	#sub a
+	{
+		 font-size: 35pt;
+	}
+	
+	#me
+	{
+		width: 450px;
+		height: 630px;
+	}
+	
+	#menu
+	{
+		position: fixed;
+		width: 150px;
+		height: 150px;
+		top: 50px;
+		left: 0mm;
+		z-index: 21;
+		display: initial;
+		transition: left .5s ease-out;
+	}
+	
+	/* nav */
+	nav, .fixed
+	{
+		position: fixed;
+		text-align: left;
+		width: 150mm;
+		height: 100%;
+		left: -150mm;
+		background-color: #222;
+		padding: 0;
+		transition: left .5s ease-out;
+	}
+	
+	nav a
+	{
+		font-size: 50pt;
+		width: 100mm;
+		padding: 25mm;
+		display: block;
+	}
+	
+	nav a:active
+	{
+		background-color: #d9fafc;
+		color: #222;
+	}
+	
+	nav a:hover
+	{
+		background-color: #222;
+		color: white;
+		font-size: 50pt;
+		padding: 25mm;
+	}
+	
+	/* card */
+	.container
+	{
+		display: block;
+		position: static;
+		max-width: 100%;
+		max-height: 100%;
+		margin: 50px 0;
+		border: none;
+	}
+	
+	.card, .card section
+	{
+		position: static;
+		display: block;
+		width: initial;
+		height: initial;
+		padding: 0;
+		margin: 0;
+		
+	}
+	
+	.card section
+	{
+		padding: 40px;
+		border-right: 1px solid #222;
+		background-color: #d9fafc;
+	}
+	
+	.card h3
+	{
+		font-size: 2.5em;	
+	}
+	
+	.card p
+	{
+		font-size: 2.5em;
+	}
+	
+	.card img
+	{
+		visibility: hidden;
+	}
+	
+	.card.flipped, .card.flipped img, .card section
+	{
+		transition: none;
+		transform: none;
+	}
+}

@@ -1,0 +1,186 @@
+{
+	"containers":
+	[
+		{
+			"title": "Projects",
+			"objs":
+			[
+				{
+					"title": "IST Department Website",
+					"color": "rgb(80, 159, 206)",
+					"img": "dept.jpg",
+					"link": "https://people.rit.edu/~lxj7261/project2/",
+					"linkText": "Department Site",
+					"keyvals":
+					[
+						["Date", "March-May 2017"],
+						["Description", "Redesigned the IST Department website based on department data stored in an API. Used JQuery to request data and dynamically create the website based on the API documentation."]
+					]
+				},
+				
+				{
+					"title": "Friend's Portfolio",
+					"color": "yellowGreen",
+					"img": "gio.png",
+					"link": "http://gioaleman.student.rit.edu",
+					"keyvals":
+					[
+						["Date", "Dec 2016"],
+						["Description", "Created a portfolio for a friend to be able to display his projects and accomplishments in a visually pleasing manner."]
+					]
+				},
+				
+				{
+					"title": "Regular Expressions Tester",
+					"color": "cornflowerblue",
+					"img": "regex.jpg",
+					"link": "https://people.rit.edu/~lxj7261/240/sandbox/test.shtml",
+					"linkText": "Regex Tester",
+					"keyvals":
+					[
+						["Date", "March-May 2016"],
+						["Description", "Created a interactive web-based tester of regular expressions using JavaScript technology. The tester gives immediate feedback and notifies the user of syntax and timeout errors seamlessly."]
+					]
+				},
+				
+				{
+					"title": "Odyssey of the Mind Website",
+					"color": "mediumPurple",
+					"img": "om.jpg",
+					"link": "https://people.rit.edu/~lxj7261/140/project3/",
+					"keyvals":
+					[
+						["Date", "Sept-Dec 2015"],
+						["Description", "Created a site for an competition that I participated in from elementary school through high school. The site explains the basis of the competition and exemplifies techniques in HTML, CSS, and JavaScript that I've learned."]
+					]
+				},
+				
+				{
+					"title": "Cedar Crest High School App",
+					"color": "coral",
+					"img": "code.jpg",
+					"link": "https://play.google.com/store/apps/details?id=com.weebly.cchsbyteclub.www",
+					"keyvals":
+					[
+						["Date", "August 2014-June 2015"],
+						["Description", "Created an app that combines information from various school websites. Worked with other students to learn cross-platform app creation using HTML, CSS, JavaScript, and Python. Learned basic database management through a Parse database."]
+					]
+				}
+			]
+		},
+		
+		{
+			"title": "Work",
+			"objs":
+			[
+				{
+					"title": "Teaching Assistant",
+					"color": "yellowGreen",
+					"img": "chalk.jpg",
+					"keyvals":
+					[
+						["Class", "Web and Mobile II"],
+						["Company", "Rochester Institute of Technology"],
+						["Date", "Sept 2016-Present"],
+						["Description", "Assisted the Professor with assignment grading, helped students understand course material and complete their assignments, attended class to ensure student understanding of lecture material."]
+					]
+				},
+				
+				{
+					"title": "Notetaker",
+					"color": "coral",
+					"img": "notes.jpg",
+					"keyvals":
+					[
+						["Classes", "Many"],
+						["Company", "Rochester Institute of Technology"],
+						["Date", "Sept 2016-Present"],
+						["Description", "Take diligent notes during class so that students in the class who are deaf or hard of hearing can pay attention to their interpreters rather than trying to take notes."]
+					]
+				},
+				
+				{
+					"title": "HEOP Tutor",
+					"color": "orange",
+					"img": "books.jpg",
+					"keyvals":
+					[
+						["Class", "Statistics I"],
+						["Company", "Rochester Institute of Technology"],
+						["Date", "Sept 2016-Dec 2016"],
+						["Description", "Worked closely with one student to improve their skills in the given course. Helped the student prepare for exams and gain a deeper, more accurate understanding of the course."]
+					]
+				},
+				
+				
+				{
+					"title": "Attraction Attendant",
+					"color": "mediumPurple",
+					"img": "hershey.jpg",
+					"keyvals":
+					[
+						["Company", "The Hershey Company"],
+						["Date", "July 2016-Aug 2017"],
+						["Description", "Create an enjoyable experience for visitors to the attraction. This involves scanning tickets, controlling lines, helping visitors use the machines, and delivering a final product to visitors."]
+					]
+				},
+				
+				{
+					"title": "Photographer's Assistant",
+					"color": "rgb(80, 159, 206)",
+					"img": "camera.jpg",
+					"keyvals":
+					[
+						["Company", "Tim McGowan Studio"],
+						["Date", "August 2013-June 2015"],
+						["Description", "Set up and tear down photo booth settings. Print photos and collect money from customers. Edit photos and use green screen software to make higher quality products for customers."]
+					]
+				}
+			]
+		},
+		
+		{
+			"title": "Volunteer",
+			"objs":
+			[
+				{
+					"title": "Get Connected",
+					"color": "yellowGreen",
+					"img": "class.jpg",
+					"keyvals":
+					[
+						["Position", "Workshop Leader"],
+						["Company", "Rochester Institute of Technology"],
+						["Date", "Feb, Mar, and Oct 2017"],
+						["Description", "Taught groups of local middle and high schoolers about technology during a day of workshops held at RIT. Allowed students to create their first website with basic HTML and CSS."]
+					]
+				},
+				
+				{
+					"title": "Student Ambassador",
+					"color": "cornflowerblue",
+					"img": "ambassador.jpg",
+					"keyvals":
+					[
+						["Company", "Rochester Institute of Technology"],
+						["Date", "2015-present"],
+						["Description", "Help to educate prospective students about RIT and the department. Organize and run events for current students. Create a bridge between faculty and students for better communication."]
+					]
+				},
+				
+				{
+					"title": "Localhost Eboard",
+					"color": "mediumPurple",
+					"img": "workshop.jpg",
+					"keyvals":
+					[
+						["Position", "Director of Introductory Education"],
+						["Company", "RIT Localhost Club"],
+						["Date", "Aug-present"],
+						["Description", "Taught Undergraduate students the basics of web development in a Beginner's Workshop Series. Created all workshop curriculum and materials. The workshop series was meant to get club members without a web background caught up enough to understand club meeting subject matter."]
+					]
+				}
+			]
+		}
+	]
+}
