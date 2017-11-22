@@ -56,43 +56,106 @@ function init()
 	byId( "menu" ).addEventListener( "click", menu );
 }
 
+/*
+	Creates all of the cards and sections for the page
+*/
 function createCards( json )
 {
 	for( var i = 0; i < json.length; i++ )
 	{
-		var cont = json[i];
+		var sect = json[i];
+		var typeCont = null;
 		var container = create("div");
-		var head = createEleWithText("h2", cont.title);
-		head.setAttribute("id", cont.title.toLowerCase());
+		var head = createEleWithText("h2", sect.title);
+
+		head.setAttribute("id", sect.title.toLowerCase());
+		container.setAttribute("class", "tab");
 		
 		container.appendChild(head);
-		
-		var cardCont = create("div");
-		cardCont.setAttribute("class", "container");
-		
-		for( var j = 0; j < cont.objs.length; j++ )
+
+		//add toggle if necessary
+		if( "types" in sect )
 		{
-			var card = cont.objs[j];
-			var cardDiv = create("div");
+			var ul = create("ul");
+
+			for( var j = 0; j < sect.types.length; j++ )
+			{
+				var li = create("li");
+				var a = createEleWithText("a", sect.types[j]);
+				a.href = "#" + sect.types[j];
+
+				li.appendChild(a);
+				ul.appendChild(li);
+			}
+
+			container.appendChild(ul);
+
+			for( var j = 0; j < sect.types.length; j++ )
+			{
+				typeCont = createCardContainer(sect, sect.types[j]);
+				container.appendChild(typeCont);
+			}
+		}
+		else//no toggle
+		{
+			typeCont = createCardContainer(sect);
+			container.appendChild(typeCont);
+		}
+		
+		byTag("main")[0].insertBefore(container, byTag("main")[0].children[byTag("main")[0].children.length - 1]);
+	}//end for
+
+	$( function() {
+		$( ".tab" ).tabs();
+	} );
+}
+
+/*
+	Creates cards for a given section and type (for toggle)
+*/
+function createCardContainer(cont, type = "")
+{
+	var cardCont = create("div");
+	cardCont.setAttribute("class", "container");
+	
+	//add the actual cards
+	for( var j = 0; j < cont.objs.length; j++ )
+	{
+		var card = cont.objs[j];
+
+		if( "type" in card && card.type != type )
+			continue;
+
+		var cardDiv = create("div");
+
+		//only make cards of the given type
+		if( "type" in card )
+		{
+			cardCont.setAttribute("id", type);
+		}
+
+		//front face
+		var front = create("section");
+		front.setAttribute("style", "--filter: " + card.color);
+
+		var frontHead = createEleWithText("h2", card.title);
+		cardDiv.appendChild(front);
+
+		//is a regular card
+		if( "img" in card )
+		{
 			cardDiv.setAttribute("class", "card");
-			
-			//front face
-			var front = create("section");
-			front.setAttribute("class", "front");
-			front.setAttribute("style", "--filter: " + card.color);
-			
+			var click = createEleWithText("p", "Click to flip");
+
 			var img = create("img");
 			img.setAttribute("src", "media/" + card.img);
 			img.setAttribute("alt", card.title);
-			
-			var frontHead = createEleWithText("h2", card.title);
-			var click = createEleWithText("p", "Click to flip");
-			
+
 			front.appendChild(img);
 			front.appendChild(frontHead);
 			front.appendChild(click);
-			cardDiv.appendChild(front);
-			
+			front.setAttribute("class", "front");
+
 			//back face
 			var back = create("section");
 			back.setAttribute("class", "back");
@@ -133,13 +196,17 @@ function createCards( json )
 				back.appendChild(p);
 			}
 			cardDiv.appendChild(back);
-			
-			cardCont.appendChild(cardDiv);
-			container.appendChild(cardCont);
 		}
-		
-		byTag("main")[0].insertBefore(container, byTag("main")[0].children[byTag("main")[0].children.length - 1]);
+		else//link card
+		{
+			front.appendChild(frontHead);
+			front.setAttribute("class", "linkCard");
+		}
+
+		cardCont.appendChild(cardDiv);
 	}
+
+	return cardCont;
 }
 
 //arrow
@@ -152,7 +219,6 @@ function arrow()
 		img.style.display = "initial";
 	else
 	{
-		
 		img.style.display = "none";
 	}
 	
@@ -200,7 +266,7 @@ function scrollInto( ele )
 function menu()
 {
 	var navTag = byTag( "nav" )[0];
-	
+
 	if( byId( "menu" ).style.left == "0mm" )
 	{
 		navTag.style.left = "0mm";

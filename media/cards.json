@@ -3,9 +3,15 @@
 	[
 		{
 			"title": "Projects",
+			"types": 
+			[
+				"Design",
+				"Development"
+			],
 			"objs":
 			[
 				{
+					"type": "Development",
 					"title": "IST Department Website",
 					"color": "rgb(80, 159, 206)",
 					"img": "dept.jpg",
@@ -19,6 +25,7 @@
 				},
 				
 				{
+					"type": "Development",
 					"title": "Friend's Portfolio",
 					"color": "yellowGreen",
 					"img": "gio.png",
@@ -31,6 +38,7 @@
 				},
 				
 				{
+					"type": "Development",
 					"title": "Regular Expressions Tester",
 					"color": "cornflowerblue",
 					"img": "regex.jpg",
@@ -44,6 +52,7 @@
 				},
 				
 				{
+					"type": "Development",
 					"title": "Odyssey of the Mind Website",
 					"color": "mediumPurple",
 					"img": "om.jpg",
@@ -56,6 +65,7 @@
 				},
 				
 				{
+					"type": "Development",
 					"title": "Cedar Crest High School App",
 					"color": "coral",
 					"img": "code.jpg",
@@ -65,6 +75,13 @@
 						["Date", "August 2014-June 2015"],
 						["Description", "Created an app that combines information from various school websites. Worked with other students to learn cross-platform app creation using HTML, CSS, JavaScript, and Python. Learned basic database management through a Parse database."]
 					]
+				}, 
+
+				{
+					"type": "Design",
+					"title": "Allen Theatre App",
+					"link": "",
+					"color": "coral"
 				}
 			]
 		},

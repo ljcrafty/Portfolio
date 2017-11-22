@@ -5,7 +5,8 @@ html
 	margin: 0;
 	padding: 0;
 	font-family: 'Work Sans', sans-serif;
-	background-color: white;
+	background-image: url("../media/stones.jpg");
+	background-size: 2000px;
 	overflow-x: hidden;
 }
 
@@ -117,7 +118,7 @@ p
 b
 {
 	font-weight: 500;
-	color: #0bb5c1;/*#444444;*/
+	color: var(--darkTurq);
 }
 
 footer
@@ -281,17 +282,84 @@ footer
 /* links */
 a
 {
-	color: #0bb5c1;
+	--darkTurq: #0bb5c1;
+	color: var(--darkTurq);
 }
 
 a:hover
 {
-	color: #5cacf4;
+	--periwinkle: #5cacf4;
+	color: var(--periwinkle);
 }
 
 a:active
 {
-	color: #42e8f4;
+	--brightTurq: #42e8f4;
+	color: var(--brightTurq);
+}
+
+/* tabs */
+.tab > ul
+{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 20px;
+	border: none;
+	background: white;
+	width: 300px;
+	padding: 0;
+}
+
+.tab > ul li
+{
+	list-style-type: none;
+	background-color: #DDD;
+	border: none;
+	width: 150px;
+	height: 25px;
+	display: inline-block;
+	text-align: center;
+	margin: 0 -3px 0;
+	box-sizing: border-box;
+	border: 1px solid rgba(1, 1, 1, 0);
+}
+
+.tab > ul li a
+{
+	text-decoration: none;
+	color: #333;
+	width: 150px;
+	height: 25px;
+	display: block;
+	padding: 3px;
+	outline: none;
+}
+
+.tab > ul li a:active
+{
+	border: none;	
+}
+
+.tab > ul li:last-child
+{
+	border-radius: 0 5px 5px 0;
+	border-left: 1px solid #AAA;
+}
+
+.tab > ul li:first-child
+{
+	border-radius: 5px 0 0 5px;
+}
+
+.tab > ul li.ui-tabs-active
+{
+	background-color: #a0f3f9;
+}
+
+.tab > ul li:hover
+{
+	background-color: white;
+	border: 1px solid #AAA;
 }
 
 /* media queries */
