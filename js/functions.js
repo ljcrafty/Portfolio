@@ -201,6 +201,10 @@ function createCardContainer(cont, type = "")
 		{
 			front.appendChild(frontHead);
 			front.setAttribute("class", "linkCard");
+			front.addEventListener("click", function()
+			{
+				window.location = "design.php?title=" + card.title;
+			});
 		}
 
 		cardCont.appendChild(cardDiv);
