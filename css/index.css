@@ -300,12 +300,18 @@ a:active
 /* link cards */
 .linkCard
 {
+	margin: 10px;
+}
+
+.linkCard section
+{
 	background-color: var(--filter);
 	width: 300px;
 	height: 195px;
+	margin: auto 10px;
 }
 
-.linkCard:hover
+.linkCard:hover section
 {
 	cursor: pointer;
 	opacity: .8;
@@ -314,8 +320,13 @@ a:active
 .linkCard h2
 {
 	color: white;
-	padding: 75px 0;
-	margin: 10px;
+	margin: auto 10px;
+}
+
+.linkCard section
+{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 /* tabs */

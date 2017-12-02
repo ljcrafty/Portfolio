@@ -37,7 +37,12 @@ function init()
   		dataType: "json",
   		success: function(response) {
     		createCards(response.containers);
-    		$(".card").flip();
+			$(".card").flip();
+			
+			if( window.location.href.split("#").length > 1 )
+			{
+				scrollInto( window.location.href.split("#")[1] );
+			}
   		},
   		error: function(xhr, ajaxOptions, thrownError)
   		{
@@ -136,7 +141,6 @@ function createCardContainer(cont, type = "")
 
 		//front face
 		var front = create("section");
-		front.setAttribute("style", "--filter: " + card.color);
 
 		var frontHead = createEleWithText("h2", card.title);
 		cardDiv.appendChild(front);
@@ -144,6 +148,8 @@ function createCardContainer(cont, type = "")
 		//is a regular card
 		if( "img" in card )
 		{
+			front.setAttribute("style", "--filter: " + card.color);
+
 			cardDiv.setAttribute("class", "card");
 			var click = createEleWithText("p", "Click to flip");
 
@@ -184,6 +190,7 @@ function createCardContainer(cont, type = "")
 			}
 			
 			//keyvals
+			console.log(type);
 			for( var k = 0; k < card.keyvals.length; k++ )
 			{
 				arr = card.keyvals[k];
@@ -200,15 +207,17 @@ function createCardContainer(cont, type = "")
 		else//link card
 		{
 			front.appendChild(frontHead);
-			front.setAttribute("class", "linkCard");
-			front.addEventListener("click", function()
-			{
-				window.location = "design.php?title=" + card.title;
+			cardDiv.setAttribute("class", "linkCard");
+			cardDiv.setAttribute("style", "--filter: " + card.color);
+
+			front.setAttribute( "title", card.link );
+			front.addEventListener("click", function(){
+				window.location = this.getAttribute("title");
 			});
 		}
 
 		cardCont.appendChild(cardDiv);
-	}
+	}//end for
 
 	return cardCont;
 }
@@ -255,6 +264,7 @@ function arrow()
 //scroll to element so you can see title
 function scrollInto( ele )
 {
+	console.log(ele);
 	var element = byId( ele.toString() ).getBoundingClientRect().top;
 	var body = byTag( "body" )[0].getBoundingClientRect().top;
 	var menuStyle = byId( "menu" ).style;
@@ -281,4 +291,50 @@ function menu()
 		navTag.style.left = "-150mm";
 		byId( "menu" ).style.left = "0mm";
 	}
+}
+
+function createGallery( imgBase )
+{
+
+}
+
+function changeShow(base, direction)
+{
+	var imgs = images[base];
+	var curDiv = byId(base);
+	var curImg = curDiv.getElementsByClassName("showcaseimg")[0];
+	var curNum = parseInt( curImg.src.split("media/" + base)[1] );
+	var newNum;
+
+	//get next image
+	switch( direction )
+	{
+		case 1:
+			if( curNum == imgs.length )
+			{
+				newNum = 1;
+			}
+			else
+			{
+				newNum = curNum + 1;
+			}
+			break;
+
+		case -1:
+			if( curNum == imgs.length )
+			{
+				newNum = imgs.length;
+			}
+			else
+			{
+				newNum = curNum - 1;
+			}
+			break;
+
+		default:
+			newNum = 1;
+	}
+
+	//change image
+	curImg.src = "media/" + base + newNum + ".png";
 }

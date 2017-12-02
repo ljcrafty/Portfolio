@@ -5,8 +5,8 @@
 			"title": "Projects",
 			"types": 
 			[
-				"Design",
-				"Development"
+				"Development",
+				"Design"
 			],
 			"objs":
 			[
@@ -79,9 +79,81 @@
 
 				{
 					"type": "Design",
+					"title": "Peter Grundy Imitation",
+					"desTitle": "grundy",
+					"link": "design.php?cont=Projects&title=grundy",
+					"color": "cornflowerblue",
+					"mainImg": "media/grundyProd1.png",
+					"overview": "For this project, I created a poster and powerpoint about Peter Grundy in imitation of his style. I also created a poster about a fake event where Peter would speak. I created these designs for a class project, but also because I admire Peter's style and simplicity and wanted to see if I could do something similar to him.",
+					"steps": [
+						{
+							"title": "Research",
+							"imgBase": "grundyRes",
+							"text": ""
+						},
+						{
+							"title": "Sketch",
+							"imgBase": "grundySketch",
+							"text": ""
+						},
+						{
+							"title": "Product",
+							"imgBase": "grundyProd",
+							"link": "media/Grundini.pdf",
+							"text": ""
+						}
+					]
+				},
+
+				{
+					"type": "Design",
 					"title": "Allen Theatre App",
-					"link": "",
-					"color": "coral"
+					"desTitle": "allen",
+					"link": "design.php?cont=Projects&title=allen",
+					"color": "coral",
+					"mainImg": "media/allenProd2.png",
+					"overview": "I created this app in hopes of helping my favorite theatre get more customers by making their information more accessible. The Allen Theatre is an old, one-movie theatre and cafe that only recently started showing movies off of film reels. I love the theatre, but it is difficult to find information on what is happening there because they only have a website and it is not mobile-friendly. The app I created aims to remedy this problem.",
+					"steps": [
+						{
+							"title": "Research",
+							"link": "media/allenProposal.pdf",
+							"text": "First, I "
+						},
+						{
+							"title": "Prototype",
+							"imgBase": "allenProt",
+							"link": "https://invis.io/Z2EQT5GY5#/198473501_Allen_-_Home",
+							"text": ""
+						},
+						{
+							"title": "Product",
+							"imgBase": "allenProd",
+							"text": ""
+						}
+					]
+				},
+
+				{
+					"type": "Design",
+					"title": "IST Department Website",
+					"desTitle": "ist",
+					"link": "design.php?cont=Projects&title=ist",
+					"color": "rgb(80, 159, 206)",
+					"mainImg": "media/istProd1.png",
+					"overview": "",
+					"steps": [
+						{
+							"title": "Sketch",
+							"imgBase": "istSketch",
+							"text": ""
+						},
+						{
+							"title": "Product",
+							"imgBase": "istProd",
+							"link": "https://people.rit.edu/~lxj7261/project2/",
+							"text": ""
+						}
+					]
 				}
 			]
 		},
