@@ -116,7 +116,6 @@
                         $left
                         <img class='showcaseimg' src='media/{$base}1.png'/>
                         $right
-                        <script>createGallery('$base');</script>
                     </div>";
 
                     jsSetup($base);

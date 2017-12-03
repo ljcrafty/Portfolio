@@ -84,23 +84,23 @@
 					"link": "design.php?cont=Projects&title=grundy",
 					"color": "cornflowerblue",
 					"mainImg": "media/grundyProd1.png",
-					"overview": "For this project, I created a poster and powerpoint about Peter Grundy in imitation of his style. I also created a poster about a fake event where Peter would speak. I created these designs for a class project, but also because I admire Peter's style and simplicity and wanted to see if I could do something similar to him.",
+					"overview": "For this project, I created a powerpoint about Peter Grundy in imitation of his style. I also created a poster about a fake event where Peter would speak. I created these designs for a class project, but also because I admire Peter's style and simplicity and wanted to see if I could do something similar to him.",
 					"steps": [
 						{
 							"title": "Research",
 							"imgBase": "grundyRes",
-							"text": ""
+							"text": "I started by looking at different examples of Grundy's work and trying to compile colors that he uses together. I created some mood boards based on these color palettes to try to recreate the playful tone that Grundy often employs to make his infographics interesting. I also did an idea map of things related to being busy that I planned to use in my powerpoint to portray the chaos that Peter occasionally employs in his work. This helped me to solidify a couple of options for the type of poster and powerpoint that I wanted to create: an impactful, bold, and urgent one, or a more subdued one. I decided to take all three of the color palettes that I had started with into the sketching phase because I was unable to decide which I thought fit best solely based on my research."
 						},
 						{
 							"title": "Sketch",
 							"imgBase": "grundySketch",
-							"text": ""
+							"text": "My first set of sketches was based around the name of Grundy's website: Grundini. I wanted to follow the playfulness of Peter's work by playing off of the name, which reminded me of Houdini. I used this idea for the first two sketches I made, but went with a different route for the third. For the third idea, I wanted to use Grundy's high-contrast color scheme, which suggests more urgency, while still remaining humorous. However, with the first two sketches, I felt that readers would get confused about the purpose of the poster, and I preferred the color blue-based color scheme to the high-contrast and green-based ones. I also did some paper sketching of some of the ideas I had for the powerpoint design, including an infographic biography of Grundy."
 						},
 						{
 							"title": "Product",
 							"imgBase": "grundyProd",
 							"link": "media/Grundini.pdf",
-							"text": ""
+							"text": "For the final product, I chose to stick with the blue-based color scheme, but change the content of the poster to better match what grundy does. Since Peter often uses text as imagery, I decided to use the title of the event to form a directional sign. I also simplified the color scheme by eliminating the yellow to make the poster less scattered. For the final powerpoint, I created a couple of visuals that reflect Grundy's style, including: his use of faces and hands in his work, his simplistic representation of complex items/concepts, the chaos he uses by filling the page with images, and his iconic use of infographics."
 						}
 					]
 				},
@@ -117,18 +117,18 @@
 						{
 							"title": "Research",
 							"link": "media/allenProposal.pdf",
-							"text": "First, I "
+							"text": "First, I did some research on the prospective users of the app. Many of the people who go to the Allen theatre are older folks who have been going there for a long time and just want to see what's new. So, I tried to keep the buttons large, and the new events at the theatre in convenient places. I also researched how other theatre apps were successful and unsuccessful and thought of different ways that my app could improve upon the concepts in other apps with respect to my specific audience. One thing that I had to keep in mind was that the Allen Theatre has an attached coffee shop which shares events with the theatre. So, it was important to find a way to display information about both the theatre and the coffee shop conveniently, while still highlighting the differences."
 						},
 						{
 							"title": "Prototype",
 							"imgBase": "allenProt",
 							"link": "https://invis.io/Z2EQT5GY5#/198473501_Allen_-_Home",
-							"text": ""
+							"text": "When prototyping the app, I tried to focus on ease of access of the most important pieces of information, while still keeping the interface simple and modern. The simplicity of the design helped to keep the buttons large so that they would be easily clickable for the older generation. I also incorporated stark contrasts so that the text on the page is easily legible, but still pleasing to look at. I took my ideas and the color scheme of the theatre's current website to invision.com, where I played with different ideas of how to navigate and interact with the app. I wanted to incorporate all of the information that is available on the current theatre website, but it was difficult at first to find a way to show all of the information without requiring a confusing amount of clicks to get to any given detail. I ended up deciding to divide the app into three tabs, which would each navigate separately. From any tab, there are, at most, three layers of depth. I gave the prototype to a couple of users and asked them to navigate the app to look for information and found that none of them had trouble understanding the navigation."
 						},
 						{
 							"title": "Product",
 							"imgBase": "allenProd",
-							"text": ""
+							"text": "In the final product, I decided to incorporate the accent color more consistently throughout the app to make information easier to skim and to unify the application. I also decided to move the tabs to the top of the application and use text instead of icons for each tab. This would make sure that users could understand the meaning behind each tab, because those who have not been to the theatre would not know that there is an attached coffee shop. I also decided to standardize the headings on the theatre and coffee shop root page to unify the app and make clear what each set of information referred to. This also helped to solidify the notion of different sections of the same app, instead of different apps for the different sections."
 						}
 					]
 				},
@@ -140,18 +140,18 @@
 					"link": "design.php?cont=Projects&title=ist",
 					"color": "rgb(80, 159, 206)",
 					"mainImg": "media/istProd1.png",
-					"overview": "",
+					"overview": "While being a part of the Information Sciences and Technologies Department at RIT, I have had to use the IST website a lot. The more I use the site, the more quirks become apparent to me. This is why I was so excited to be assigned the task of recreating and redesigning the IST website for my Client Programming class. For this project, I got to clean up the interface of the site and make the navigation more intuitive for everyone.",
 					"steps": [
 						{
 							"title": "Sketch",
 							"imgBase": "istSketch",
-							"text": ""
+							"text": "Since there is so much information on the IST Department website, the first thing I wanted to do was design how I would arrange that information. I decided on a one-page site with different sections for different information. I played around with some different layout possibilities for the different sections including using some cards, some popups, and some tabs. I wanted to make navigation in the site easier by making it less complicated. In the original site, some popups led to other popups, which made for a confusing experienceSo, my goal was to reduce the number of layers of navigation to two. I also wanted to make information more uniformly important as some links in the original site were small and easy to pass over, while they still included important information for some students."
 						},
 						{
 							"title": "Product",
 							"imgBase": "istProd",
 							"link": "https://people.rit.edu/~lxj7261/project2/",
-							"text": ""
+							"text": "In the final product, I was able to use all of the different varieties of section layouts that I had planned in my sketches. This made each section unique and interesting based on its own information, while the design allowed the site to appear unified. I incorporated the color scheme of the department into the site through the various links and cards, but toned down the specific colors in the department logo to make the site more calming and comfortable."
 						}
 					]
 				}

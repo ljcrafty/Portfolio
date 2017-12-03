@@ -293,11 +293,6 @@ function menu()
 	}
 }
 
-function createGallery( imgBase )
-{
-
-}
-
 function changeShow(base, direction)
 {
 	var imgs = images[base];
@@ -323,11 +318,11 @@ function changeShow(base, direction)
 		case -1:
 			if( curNum == imgs.length )
 			{
-				newNum = imgs.length;
+				newNum = curNum - 1;
 			}
 			else
 			{
-				newNum = curNum - 1;
+				newNum = imgs.length;
 			}
 			break;
 

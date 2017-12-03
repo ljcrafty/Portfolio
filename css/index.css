@@ -388,8 +388,12 @@ a:active
 
 .tab > ul li:hover
 {
-	background-color: white;
-	border: 1px solid #AAA;
+	background-color: #AAA;
+}
+
+.tab > ul li:last-child:hover
+{
+	border-left: 1px solid #AAA;
 }
 
 /* media queries */

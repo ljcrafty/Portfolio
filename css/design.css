@@ -68,22 +68,21 @@ main
 {
     padding: 100px 0;
     margin: 0 auto;
-    width: 1000px;
+    width: 70%;
 }
 
 #overview
 {
     display: flex;
     justify-content: center;
-    vertical-align: middle;
-    height: 400px;
+    max-height: 400px;
+    height: 300px;
 }
 
 #overview img
 {
     object-fit: contain;
-    flex-basis: 50%;
-    max-width: 50%;
+    height: 90%;
 }
 
 #overview span
@@ -107,13 +106,6 @@ main p, main span
     line-height: 1.5em;
     font-weight: 300;
     font-size: 1.1em;
-}
-
-main p:first-child
-{
-    border-bottom: 1px solid #222;
-    padding: 20px 0;
-    margin-bottom: 100px;
 }
 
 .step a
