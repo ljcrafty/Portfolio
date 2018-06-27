@@ -12,10 +12,24 @@
 			[
 				{
 					"type": "Development",
+					"title": "!Pictionary",
+					"color": "#8a5293",
+					"img": "pictionary.jpg",
+					"link": "https://laurenjohnston.cc/pictionary/",
+					"linkText": "Pictionary Game",
+					"keyvals":
+					[
+						["Date", "January-May 2018"],
+						["Description", "Created a web version of Pictionary mainly using JS/JQuery, PHP, and MySQL. Utilized AJAX calls to create a turn-based gameplay where players are automatically advanced to the next stage after all other players have completed the given stage."]
+					]
+				},
+
+				{
+					"type": "Development",
 					"title": "IST Department Website",
 					"color": "rgb(80, 159, 206)",
 					"img": "dept.jpg",
-					"link": "https://people.rit.edu/~lxj7261/project2/",
+					"link": "https://laurenjohnston.cc/project2/",
 					"linkText": "Department Site",
 					"keyvals":
 					[
@@ -29,7 +43,7 @@
 					"title": "Friend's Portfolio",
 					"color": "yellowGreen",
 					"img": "gio.png",
-					"link": "http://gioaleman.student.rit.edu",
+					"link": "http://gioaleman.ddns.net/",
 					"keyvals":
 					[
 						["Date", "Dec 2016"],
@@ -40,9 +54,9 @@
 				{
 					"type": "Development",
 					"title": "Regular Expressions Tester",
-					"color": "cornflowerblue",
+					"color": "coral",
 					"img": "regex.jpg",
-					"link": "https://people.rit.edu/~lxj7261/240/sandbox/test.shtml",
+					"link": "https://laurenjohnston.cc/240/sandbox/test.shtml",
 					"linkText": "Regex Tester",
 					"keyvals":
 					[
@@ -54,9 +68,9 @@
 				{
 					"type": "Development",
 					"title": "Odyssey of the Mind Website",
-					"color": "mediumPurple",
+					"color": "#8a5293",
 					"img": "om.jpg",
-					"link": "https://people.rit.edu/~lxj7261/140/project3/",
+					"link": "https://laurenjohnston.cc/140/project3/",
 					"keyvals":
 					[
 						["Date", "Sept-Dec 2015"],
@@ -150,7 +164,7 @@
 						{
 							"title": "Product",
 							"imgBase": "istProd",
-							"link": "https://people.rit.edu/~lxj7261/project2/",
+							"link": "https://laurenjohnston.cc/project2/",
 							"text": "In the final product, I was able to use all of the different varieties of section layouts that I had planned in my sketches. This made each section unique and interesting based on its own information, while the design allowed the site to appear unified. I incorporated the color scheme of the department into the site through the various links and cards, but toned down the specific colors in the department logo to make the site more calming and comfortable."
 						}
 					]
@@ -168,9 +182,9 @@
 					"img": "chalk.jpg",
 					"keyvals":
 					[
-						["Class", "Web and Mobile II"],
-						["Company", "Rochester Institute of Technology"],
 						["Date", "Sept 2016-Present"],
+						["Company", "Rochester Institute of Technology"],
+						["Class", "Web and Mobile II"],
 						["Description", "Assisted the Professor with assignment grading, helped students understand course material and complete their assignments, attended class to ensure student understanding of lecture material."]
 					]
 				},
@@ -181,9 +195,9 @@
 					"img": "notes.jpg",
 					"keyvals":
 					[
-						["Classes", "Many"],
-						["Company", "Rochester Institute of Technology"],
 						["Date", "Sept 2016-Present"],
+						["Company", "Rochester Institute of Technology"],
+						["Classes", "Many"],
 						["Description", "Take diligent notes during class so that students in the class who are deaf or hard of hearing can pay attention to their interpreters rather than trying to take notes."]
 					]
 				},
@@ -194,22 +208,21 @@
 					"img": "books.jpg",
 					"keyvals":
 					[
-						["Class", "Statistics I"],
-						["Company", "Rochester Institute of Technology"],
 						["Date", "Sept 2016-Dec 2016"],
+						["Company", "Rochester Institute of Technology"],
+						["Class", "Statistics I"],
 						["Description", "Worked closely with one student to improve their skills in the given course. Helped the student prepare for exams and gain a deeper, more accurate understanding of the course."]
 					]
 				},
 				
-				
 				{
 					"title": "Attraction Attendant",
-					"color": "mediumPurple",
+					"color": "#8a5293",
 					"img": "hershey.jpg",
 					"keyvals":
 					[
-						["Company", "The Hershey Company"],
 						["Date", "July 2016-Aug 2017"],
+						["Company", "The Hershey Company"],
 						["Description", "Create an enjoyable experience for visitors to the attraction. This involves scanning tickets, controlling lines, helping visitors use the machines, and delivering a final product to visitors."]
 					]
 				},
@@ -220,8 +233,8 @@
 					"img": "camera.jpg",
 					"keyvals":
 					[
-						["Company", "Tim McGowan Studio"],
 						["Date", "August 2013-June 2015"],
+						["Company", "Tim McGowan Studio"],
 						["Description", "Set up and tear down photo booth settings. Print photos and collect money from customers. Edit photos and use green screen software to make higher quality products for customers."]
 					]
 				}
@@ -238,9 +251,9 @@
 					"img": "class.jpg",
 					"keyvals":
 					[
-						["Position", "Workshop Leader"],
-						["Company", "Rochester Institute of Technology"],
 						["Date", "Feb, Mar, and Oct 2017"],
+						["Company", "Rochester Institute of Technology"],
+						["Position", "Workshop Leader"],
 						["Description", "Taught groups of local middle and high schoolers about technology during a day of workshops held at RIT. Allowed students to create their first website with basic HTML and CSS."]
 					]
 				},
@@ -251,21 +264,21 @@
 					"img": "ambassador.jpg",
 					"keyvals":
 					[
-						["Company", "Rochester Institute of Technology"],
 						["Date", "2015-present"],
+						["Company", "Rochester Institute of Technology"],
 						["Description", "Help to educate prospective students about RIT and the department. Organize and run events for current students. Create a bridge between faculty and students for better communication."]
 					]
 				},
 				
 				{
 					"title": "Localhost Eboard",
-					"color": "mediumPurple",
+					"color": "#8a5293",
 					"img": "workshop.jpg",
 					"keyvals":
 					[
-						["Position", "Director of Introductory Education"],
+						["Date", "Aug 2018-present"],
 						["Company", "RIT Localhost Club"],
-						["Date", "Aug-present"],
+						["Position", "Director of Introductory Education"],
 						["Description", "Taught Undergraduate students the basics of web development in a Beginner's Workshop Series. Created all workshop curriculum and materials. The workshop series was meant to get club members without a web background caught up enough to understand club meeting subject matter."]
 					]
 				}
